@@ -34,7 +34,7 @@
 .tileTitle {
   bottom: 20px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: calc(16px + 0.390625vw);
   left: 20px;
   margin-right: 20px;
   position: absolute;

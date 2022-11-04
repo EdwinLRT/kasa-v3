@@ -25,7 +25,7 @@
 
 .bannerContent {
   color: #ffffff;
-  font-size: 48px;
+  font-size: calc(42px + 0.390625vw);
   left: 50%;
   position: absolute;
   top: 50%;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1490px) {
   .bannerContent {
-    font-size: 24px;
+    font-size: calc(24px + 0.390625vw);
     left: 15px;
     transform: translateY(-50%);
   }

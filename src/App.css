@@ -8,13 +8,15 @@ body {
   font-family: "Montserrat";
 }
 
-.App {
+.app {
   display: flex;
   flex-direction: column;
   margin: auto;
-  min-height: 100vh;
+  height: 100vh;
 }
 .content {
+  display: flex;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
+  flex: 1 1 auto;
 }

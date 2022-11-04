@@ -1,10 +1,14 @@
 .about {
   width: 100%;
-  max-width: 100%;
+  max-width: 2160px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .collapseSection {
   margin: auto;
   width: 90%;
+  flex: 1;
 }
 @media screen and (max-width: 1490px) {
   .collapseSection {
