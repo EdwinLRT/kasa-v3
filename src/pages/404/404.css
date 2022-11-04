@@ -16,8 +16,21 @@
 }
 
 .linkTo.linkToError404 {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: 150px;
+  background: none;
+  color: inherit;
+  border: none;
+  text-decoration: underline;
+  padding: 1vw;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: calc(17px + 0.390625vw);
+  font-weight: 500;
+  margin-top: 5vh;
+  color: #ff6060;
 }
 
 @media screen and (max-width: 1490px) {
