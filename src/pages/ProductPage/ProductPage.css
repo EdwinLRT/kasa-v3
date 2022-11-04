@@ -1,0 +1,142 @@
+.container {
+  color: #ff6060;
+}
+
+.productAndOwner {
+  display: inline-flex;
+  width: 100%;
+}
+
+.productAndOwner > div {
+  flex: 1 0 auto;
+}
+
+.productInformations {
+  flex-direction: column;
+}
+
+.productTitle {
+  font-size: 36px;
+}
+
+.productLocation {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.ownerInformations {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.ownerName {
+  font-size: 18px;
+  margin-right: 10px;
+  text-align: right;
+  width: 100px;
+}
+
+.ownerPicture {
+  border-radius: 50%;
+  height: 64px;
+  object-fit: cover;
+  width: 64px;
+}
+
+.rating {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star {
+  height: 30px;
+  width: 30px;
+}
+
+.equipmentDescription {
+  display: inline-flex;
+  gap: 0 75px;
+  line-height: 22.5px;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.equipmentDescription > .collapse {
+  width: 100%;
+}
+
+@media screen and (max-width: 1490px) {
+  .productAndOwner {
+    display: block;
+  }
+
+  .productTitle {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .productLocation {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+  }
+
+  .tags > .tag {
+    margin-left: 0px;
+    min-width: 50px;
+  }
+
+  .ownerAndRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .rating {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .ownerInformations {
+    margin-bottom: unset;
+    width: 100%;
+  }
+
+  .ownerPicture {
+    height: 32px;
+    width: 32px;
+  }
+
+  .star {
+    height: 25px;
+    width: 25px;
+  }
+
+  .equipmentDescription {
+    display: block;
+  }
+
+  .equipmentDescription > .collapse {
+    width: 100%;
+  }
+
+  .collapse {
+    margin-bottom: 20px;
+  }
+}

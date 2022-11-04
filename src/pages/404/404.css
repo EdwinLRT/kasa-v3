@@ -1,0 +1,31 @@
+.Error404 {
+  text-align: center;
+}
+
+.Error404Title {
+  color: #ff6060;
+  font-size: 200px;
+  font-weight: 800;
+  margin: auto;
+}
+
+.Error404Description {
+  color: #ff6060;
+  display: block;
+  font-size: 40px;
+}
+
+.linkTo.linkToError404 {
+  display: block;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 1490px) {
+  .Error404Title {
+    font-size: 96px;
+  }
+
+  .Error404Description {
+    font-size: 18px;
+  }
+}

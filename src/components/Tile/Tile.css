@@ -1,0 +1,48 @@
+.tile {
+  border-radius: 10px;
+  height: 100%;
+  min-height: 340px;
+  position: relative;
+}
+.tile:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.tileImage {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.tileDarken {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6643032212885154) 0%,
+    rgba(255, 255, 255, 0) 54%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.tileTitle {
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  left: 20px;
+  margin-right: 20px;
+  position: absolute;
+}
+
+@media screen and (max-width: 1490px) {
+  .tile {
+    min-height: 255px;
+    max-height: 400px;
+  }
+}

@@ -1,0 +1,53 @@
+.collapse {
+  border-radius: 8px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.titleBackgroundCollapse {
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 25%;
+  min-height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.titleCollapse {
+  color: #ffffff;
+  font-size: 22px;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 10px;
+}
+
+.arrowCollapse {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.arrowCollapse.true {
+  justify-content: end;
+}
+.arrowCollapse.true > img {
+  transform: rotate(-180deg);
+  transition: all 0.6s ease;
+}
+.arrowCollapse.false > img {
+  transition: all 0.6s ease;
+}
+.descriptionCollapse {
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #ff6060;
+  height: 75%;
+  margin-top: -10px;
+  min-height: 84px;
+  padding: 25px 10px 10px 10px;
+  font-size: 18px;
+}

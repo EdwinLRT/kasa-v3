@@ -1,0 +1,22 @@
+.productsList {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 60px;
+  padding: 55px 50px;
+}
+
+@media screen and (max-width: 1490px) {
+  .Accueil > .banner {
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .productsList {
+    background-color: unset;
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}

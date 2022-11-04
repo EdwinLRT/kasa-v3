@@ -1,0 +1,14 @@
+.about {
+  width: 100%;
+  max-width: 100%;
+}
+.collapseSection {
+  margin: auto;
+  width: 90%;
+}
+@media screen and (max-width: 1490px) {
+  .collapseSection {
+    margin: auto;
+    width: 98%;
+  }
+}
