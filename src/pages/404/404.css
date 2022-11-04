@@ -1,5 +1,8 @@
 .Error404 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .Error404Title {
