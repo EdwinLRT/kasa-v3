@@ -9,7 +9,7 @@ function Erreur404() {
       <span className="Error404Description">
         Oups! La page que vous demandez n'existe pas.
       </span>
-      <NavLink to="/" className="linkTo linkToError404">
+      <NavLink to="/home" className="linkTo linkToError404">
         Retourner sur la page d’accueil
       </NavLink>
     </div>
