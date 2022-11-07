@@ -1,6 +1,7 @@
 .container {
   color: #ff6060;
-  max-width: 2160px;
+  max-width: 80vw;
+  min-width: 80vw;
   margin: 3vh auto;
 }
 
@@ -76,7 +77,8 @@
 @media screen and (max-width: 1490px) {
   .container {
     color: #ff6060;
-    width: 90vw;
+    max-width: 90vw;
+    min-width: 90vw;
   }
   .productAndOwner {
     display: block;

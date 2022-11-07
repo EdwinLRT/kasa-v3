@@ -50,4 +50,5 @@
   min-height: 84px;
   padding: 25px 10px 10px 10px;
   font-size: calc(14px + 0.390625vw);
+  max-width: inherit;
 }
