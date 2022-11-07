@@ -41,3 +41,26 @@ nav {
     margin: auto 5px;
   }
 }
+@media screen and (max-width: 350px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
+  header > img {
+    height: 47px;
+  }
+  .navContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .navLink {
+    margin: auto 5px;
+  }
+}

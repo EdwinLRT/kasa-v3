@@ -13,7 +13,7 @@ function Header() {
   return (
     <header>
       <img src={logoHeader} alt="Logo" onClick={navigateHome} />
-      <nav>
+      <nav className="navContainer">
         <NavLink to="/home" className="navLink menu">
           Accueil
         </NavLink>
