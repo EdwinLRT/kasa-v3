@@ -13,6 +13,7 @@ function Header() {
     <header>
       <img src={logoHeader} alt="Logo" onClick={navigateHome} />
       <nav className="navContainer">
+        {/* used for navigation allows to know where the user is */}
         <NavLink to="/home" className="navLink menu">
           Accueil
         </NavLink>

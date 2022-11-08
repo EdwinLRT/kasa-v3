@@ -5,6 +5,7 @@ import Aboutpage from "../pages/About/About";
 import Home from "../pages/Home/Home";
 import Productpage from "../pages/ProductPage/ProductPage";
 
+// creation of a path for each link Added /home for users who might type the link directly.
 export const router = createBrowserRouter([
   {
     path: "/",
