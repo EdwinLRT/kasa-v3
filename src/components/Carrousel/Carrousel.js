@@ -3,10 +3,11 @@ import "./Carrousel.css";
 import arrow from "../../assets/img/Components/Carrousel/arrow.png";
 
 function Carrousel({ images }) {
-  /* Crée un Hook d'état */
+  /* Create a Status Hook */
   let [imageToShow, changeImage] = useState(0);
   let imageIndex = images.length;
 
+  /* To return to the previous image */
   const imagePrevious = () => {
     if (imageToShow === 0) {
       changeImage(imageIndex - 1);
@@ -15,7 +16,7 @@ function Carrousel({ images }) {
     }
     return changeImage;
   };
-
+  /* To go to the next image */
   const imageNext = () => {
     if (imageToShow === imageIndex - 1) {
       changeImage((imageIndex = 0));
@@ -27,6 +28,7 @@ function Carrousel({ images }) {
 
   return (
     <div className="carrousel">
+      {/* If the number of images is greater than 1 then display the left arrow */}
       {imageIndex > 1 && (
         <img
           className="arrow leftArrow"
@@ -35,6 +37,7 @@ function Carrousel({ images }) {
           onClick={imagePrevious}
         />
       )}
+      {/* mapping on the number of images */}
       {images.map((image, index) => {
         return (
           <img
@@ -47,6 +50,7 @@ function Carrousel({ images }) {
           />
         );
       })}
+      {/* If the number of images is greater than 1 then display the right arrow */}
       {imageIndex > 1 && (
         <img
           className="arrow rightArrow"
