@@ -1,38 +1,38 @@
 import React, { useState } from "react";
 import "./Carrousel.css";
-import fleche from "../../assets/img/Components/Carrousel/arrow.png";
+import arrow from "../../assets/img/Components/Carrousel/arrow.png";
 
 function Carrousel({ images }) {
   /* Crée un Hook d'état */
-  let [imgAfficher, changerImg] = useState(0);
-  let nombreImg = images.length;
+  let [imageToShow, changeImage] = useState(0);
+  let imageIndex = images.length;
 
-  const imgPrecedente = () => {
-    if (imgAfficher === 0) {
-      changerImg(nombreImg - 1);
+  const imagePrevious = () => {
+    if (imageToShow === 0) {
+      changeImage(imageIndex - 1);
     } else {
-      changerImg(imgAfficher - 1);
+      changeImage(imageToShow - 1);
     }
-    return changerImg;
+    return changeImage;
   };
 
-  const imgSuivante = () => {
-    if (imgAfficher === nombreImg - 1) {
-      changerImg((nombreImg = 0));
+  const imageNext = () => {
+    if (imageToShow === imageIndex - 1) {
+      changeImage((imageIndex = 0));
     } else {
-      changerImg(imgAfficher + 1);
+      changeImage(imageToShow + 1);
     }
-    return changerImg;
+    return changeImage;
   };
 
   return (
     <div className="carrousel">
-      {nombreImg > 1 && (
+      {imageIndex > 1 && (
         <img
           className="arrow leftArrow"
-          src={fleche}
+          src={arrow}
           alt="Photographie précédente"
-          onClick={imgPrecedente}
+          onClick={imagePrevious}
         />
       )}
       {images.map((image, index) => {
@@ -40,19 +40,19 @@ function Carrousel({ images }) {
           <img
             key={index}
             className={
-              index === imgAfficher ? "carrouselImage actif" : "carrouselImage"
+              index === imageToShow ? "carrouselImage actif" : "carrouselImage"
             }
             src={image}
             alt="Logement"
           />
         );
       })}
-      {nombreImg > 1 && (
+      {imageIndex > 1 && (
         <img
           className="arrow rightArrow"
-          src={fleche}
+          src={arrow}
           alt="Photographie suivante"
-          onClick={imgSuivante}
+          onClick={imageNext}
         />
       )}
     </div>
