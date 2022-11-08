@@ -6,7 +6,7 @@ function Collapse({ titre, description }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="collapse" id={`collapse${titre}`}>
+    <div className={`collapse${titre} collapse`}>
       <div className="titleBackgroundCollapse" onClick={() => setOpen(!open)}>
         <div className="titleCollapse">{titre}</div>
         <div className={`arrowCollapse ${open}`}>
