@@ -6,7 +6,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 function Header() {
   const navigate = useNavigate();
   const navigateHome = () => {
-    // 👇️ navigate to /
     navigate("/home");
   };
 
